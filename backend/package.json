@@ -1,10 +1,11 @@
 {
-  "name": "backend",
+  "name": "lets-sell",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "Let's Sell Point of Sales System",
+  "type": "module",
+  "main": "index.js",
   "scripts": {
-    "start": "node ./src/server.js"
+    "start": "node ./src/index.js"
   },
   "author": "",
   "license": "ISC",

@@ -1,11 +1,12 @@
-const Pool = require('pg').Pool;
+import pg from 'pg';
 
-const pool = new Pool({
-    host: process.env.dbhost,
-    user: process.env.dbuser,
-    password: process.env.dbpassword,
-    port: process.env.dbport,
-    database: process.env.db,
+const env = process.env;
+const pool = new pg.Pool({
+    database: env.db,
+    host: env.dbhost,
+    user: env.dbuser,
+    password: env.dbpassword,
+    port: env.dbport,
 });
 
-module.exports = pool;
+export default pool;
